@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "t5bIX5vGdmwxoPM+jgPsVJtMj5bRjYsLPrlcPViqb18spYwiW9NU4i6gSvr/BOMXiqCN4G0DNyY1+/3ygOpqGg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nitro5\\Desktop\\OnlineShop\\OnlineShop\\OnlineShop.API\\OnlineShop.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nitro5\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Nitro5\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Nitro5\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Nitro5\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Nitro5\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Nitro5\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

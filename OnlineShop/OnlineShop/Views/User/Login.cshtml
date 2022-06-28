@@ -1,0 +1,48 @@
+﻿@model OnlineShop.Models.LoginModel
+
+@{ ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="container">
+    <h3 style="color: #FDA30E; text-align: center; text-transform: uppercase; font-size: 48px;padding-top:50px">Đăng nhập</h3>
+</div>
+<div class="content">
+
+    @using (Html.BeginForm("Login", "User", FormMethod.Post))
+    {
+@Html.AntiForgeryToken()
+    <div class="form-horizontal" style="padding: 10% 2.5em;font-size:20px ">
+
+        <div class="form-group">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Đăng nhập" class="btn btn-default" style="background-color:#FDA30E;color:white " />
+                <a href="/dang-ky"><input type="button" value="Đăng ký" class="btn btn-default" style="background-color:#FDA30E;color:white" /></a>
+                <br />
+                <a class="btn btn-primary" style="background-color: #3b5998;margin-top:20px" href="/User/LoginFacebook" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                     Đăng nhập bằng facebook
+                </a>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>}
+
+</div>
+
